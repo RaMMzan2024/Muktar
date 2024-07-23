@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sidebar-left">
+        <div class="sidebar-left-logo">ЛОГО</div>
+
+        <button class="sidebar-left-icon" id="managers-btn"> <img class="users-img" src="img/users.png" alt="">
+            Менеджеры</button>
+        <button class="sidebar-left-icon" id="regions-btn"> <img class="location-img" src="img/location.png"
+                alt="">Регионы</button>
+    </div>
+
+
+    <div class="content-left">
+        <div id="managers" class="page-left active">
+            <div class="head-right-page">
+                <button class="head-right-exit-btn">
+                    <p class="head-right-exit-text">Выход</p>
+                    <img class="head-right-exit-logo" src="img/exit.png" alt="">
+                </button>
+            </div>
+            <div class="right-page-block">
+                <h1 class="right-page-title">Текст</h1>
+                <div class="right-page-head">
+                    <div class="right-search-block">
+                        <p class="right-search-text">Поиск</p>
+                        <img class="right-search-img" src="img/search.png" alt="">
+                    </div>
+                    <button class="right-filter-btn"><img class="right-filter-img" src="img/filter.png"
+                            alt="">Фильтр</button>
+                    <button id="addManagerBtn" class="right-manager-btn">Добавить менеджера</button>
+                </div>
+
+
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-btn close-btn-1">&times;</span>
+                        <h1 class="add-manager-text">Добавить менеджера</h1>
+                        <label class="name-manager" for="managerName">ФИО менеджера</label>
+                        <input type="text" id="managerName" class="modal-input" placeholder="Напишите ФИО">
+                        <label class="number-manager" for="phoneNumber">Номер телефона</label>
+                        <input type="text" id="phoneNumber" class="modal-input" placeholder="+996 ( ___ ) __ __ __">
+                        <div class="add-manager-btns">
+                            <button class="cancel-btn add-manager-btn">Отменить</button>
+                            <button class="save-btn add-manager-btn">Сохранить</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="active-hidden-block">
+                    <p class="active-text">АКТИВНЫЕ (45 556)</p>
+                    <p class="hidden-text">СКРЫТЫЕ (75)</p>
+                </div>
+                <div class="active-hidden-lines">
+                    <hr class="active-text-line">
+                    <hr class="hidden-text-line">
+                </div>
+                <div class="markAll-block">
+                    <button class="markAll-btn">
+                        <input class="markAll-click" type="checkbox">
+                        <p class="markAll-text">Отметить все</p>
+                    </button>
+                    <button class="markAll-delete-block">
+                        <img class="markAll-delete-img" src="img/delete.png" alt="">
+                    </button>
+                    <button class="markAll-eye-block">
+                        <img class="markAll-eye-img" src="img/eyes.png" alt="">
+                    </button>
+                </div>
+
+                <div class="header-lists-block">
+                    <div class="head-number-icon">№</div>
+                    <h1 class="head-list-text">ФИО</h1>
+                    <h1 class="head-list-text">ТЕЛЕФОН</h1>
+                    <h1 class="head-list-text">ДЕЙСТВИЯ</h1>
+                </div>
+                <hr class="header-list-line">
+
+
+                <ol class="lists-block">
+                    <li class="list-name"> Аликов Алик Аликович</li>
+                    <div class="list-number">+996 707 123 456</div>
+                    <div class="list-imgs">
+                        <button id="addManagerBtn--3"><img class="list-img" src="img/System icons.png" alt=""></button>
+                        <button><img class="list-img" src="img/Real World Icon.png" alt=""></button>
+                        <button><img class="list-img" src="img/Frame.png" alt=""></button>
+                    </div>
+                </ol>
+
+                <ol class="lists-block">
+                    <li class="list-name"> Аликов Алик Аликович</li>
+                    <div class="list-number">+996 707 123 456</div>
+                    <div class="list-imgs">
+                        <button id="addManagerBtn--3"><img class="list-img" src="img/System icons.png" alt=""></button>
+                        <button><img class="list-img" src="img/Real World Icon.png" alt=""></button>
+                        <button><img class="list-img" src="img/Frame.png" alt=""></button>
+                    </div>
+                </ol>
+
+                <ol class="lists-block">
+                    <li class="list-name"> Аликов Алик Аликович</li>
+                    <div class="list-number">+996 707 123 456</div>
+                    <div class="list-imgs">
+                        <button id="addManagerBtn--3"> <img class="list-img" src="img/System icons.png" alt=""></button>
+                        <button> <img class="list-img" src="img/Real World Icon.png" alt=""></button>
+                        <button> <img class="list-img" src="img/Frame.png" alt=""></button>
+                    </div>
+                </ol>
+
+                <div class="footer-pages-blocks">
+                    <div class="open-page-block">
+                        <p class="open-page-text">Перейти на страницу</p>
+                        <div class="open-page-minblock">0</div>
+                    </div>
+                    <div class="pages-blocks">
+                        <button class="footer-arrow-btn"><img class="footer-arrow-img" src="img/arrow-footer.png"
+                                alt=""></button>
+                        <button class="page-block">1</button>
+                        <button class="page-block">2</button>
+                        <button class="page-block">3</button>
+                        <button class="page-block">4</button>
+                        <button class="page-block">5</button>
+                        <button class="page-block">...</button>
+                        <button class="page-block">234</button>
+                        <button class="footer-arrow-btn"><img class="footer-arrow-img" src="img/arrow-footer-2.png"
+                                alt=""></button>
+                    </div>
+                    <div class="footer-show-block">
+                        <p class="show-text">Показать</p>
+                        <input type="number" min="0" max="34">
+                        <p class="show-number">из 34</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div id="regions" class="page-left">
+            <div class="head-right-page">
+                <button class="head-right-exit-btn">
+                    <p class="head-right-exit-text">Выход</p>
+                    <img class="head-right-exit-logo" src="img/exit.png" alt="">
+                </button>
+            </div>
+            <div class="right-page-block">
+                <h1 class="right-page-title">Текст</h1>
+                <div class="right-page-head">
+                    <div class="right-search-block">
+                        <p class="right-search-text">Поиск</p>
+                        <img class="right-search-img" src="img/search.png" alt="">
+                    </div>
+                    <button class="right-filter-btn"><img class="right-filter-img" src="img/filter.png"
+                            alt="">Фильтр</button>
+                    <button id="addManagerBtn-2" class="right-manager-btn">Добавить менеджера</button>
+                </div>
+
+
+                <div id="modal-2" class="modal">
+                    <div class="modal-content">
+                        <span class="close-btn close-btn-2">&times;</span>
+                        <h1 class="add-manager-text">Добавить менеджера</h1>
+                        <label class="name-manager" for="managerName2">ФИО менеджера</label>
+                        <input type="text" id="managerName2" class="modal-input" placeholder="Напишите ФИО">
+                        <label class="number-manager" for="phoneNumber2">Номер телефона</label>
+                        <input type="text" id="phoneNumber2" class="modal-input" placeholder="+996 ( ___ ) __ __ __">
+                        <div class="add-manager-btns">
+                            <button class="cancel-btn add-manager-btn">Отменить</button>
+                            <button class="save-btn add-manager-btn">Сохранить</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="active-hidden-block">
+                    <p class="active-text">АКТИВНЫЕ (45 556)</p>
+                    <p class="hidden-text">СКРЫТЫЕ (75)</p>
+                </div>
+                <div class="active-hidden-lines">
+                    <hr class="active-text-line">
+                    <hr class="hidden-text-line">
+                </div>
+                <div class="markAll-block">
+                    <button class="markAll-btn">
+                        <input class="markAll-click" type="checkbox">
+                        <p class="markAll-text">Отметить все</p>
+                    </button>
+                    <button class="markAll-delete-block">
+                        <img class="markAll-delete-img" src="img/delete.png" alt="">
+                    </button>
+                    <button class="markAll-eye-block">
+                        <img class="markAll-eye-img" src="img/eyes.png" alt="">
+                    </button>
+                </div>
+
+                <div class="header-lists-block">
+                    <div class="head-number-icon">№</div>
+                    <div class="head-list-text-block">
+                        <h1 class="head-list-text">РЕГИОН</h1>
+                        <h1 class="head-list-text">ДЕЙСТВИЯ</h1>
+                    </div>
+                </div>
+                <hr class="header-list-line">
+
+
+                <ol class="lists-block">
+                    <li class="list-name">г.Бишкек</li>
+                    <div class="list-imgs">
+                        <button id="addManagerBtn--3"><img class="list-img" src="img/System icons.png" alt=""></button>
+                        <button><img class="list-img" src="img/Real World Icon.png" alt=""></button>
+                        <button><img class="list-img" src="img/Frame.png" alt=""></button>
+                    </div>
+                </ol>
+
+                <ol class="lists-block">
+                    <li class="list-name">г.Бишкек</li>
+                    <div class="list-imgs">
+                        <button id="addManagerBtn--3"><img class="list-img" src="img/System icons.png" alt=""></button>
+                        <button><img class="list-img" src="img/Real World Icon.png" alt=""></button>
+                        <button><img class="list-img" src="img/Frame.png" alt=""></button>
+                    </div>
+                </ol>
+
+                <ol class="lists-block">
+                    <li class="list-name">г.Бишкек</li>
+                    <div class="list-imgs">
+                        <button id="addManagerBtn--3"> <img class="list-img" src="img/System icons.png" alt=""></button>
+                        <button> <img class="list-img" src="img/Real World Icon.png" alt=""></button>
+                        <button> <img class="list-img" src="img/Frame.png" alt=""></button>
+                    </div>
+                </ol>
+
+                <div class="footer-pages-blocks">
+                    <div class="open-page-block">
+                        <p class="open-page-text">Перейти на страницу</p>
+                        <div class="open-page-minblock">0</div>
+                    </div>
+                    <div class="pages-blocks">
+                        <button class="footer-arrow-btn"><img class="footer-arrow-img" src="img/arrow-footer.png"
+                                alt=""></button>
+                        <button class="page-block">1</button>
+                        <button class="page-block">2</button>
+                        <button class="page-block">3</button>
+                        <button class="page-block">4</button>
+                        <button class="page-block">5</button>
+                        <button class="page-block">...</button>
+                        <button class="page-block">234</button>
+                        <button class="footer-arrow-btn"><img class="footer-arrow-img" src="img/arrow-footer-2.png"
+                                alt=""></button>
+                    </div>
+                    <div class="footer-show-block">
+                        <p class="show-text">Показать</p>
+                        <input type="number" min="0" max="34">
+                        <p class="show-number">из 34</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="javascrit.js"></script>
+    <script src="registration.js"></script>
+</body>
+
+</html>

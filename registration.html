@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <div class="registration-container">
+        <img src="img/logo-login.png" alt="Logo" class="logo">
+        <p class="intro-text">Welcome! Please register to continue.</p>
+        <div class="input-container">
+            <input class="regis-input" type="text" id="username" placeholder="Username">
+            <span class="toggle-visibility" onclick="toggleVisibility('username')">
+                <img class="regis-eyes" src="img/open-eye-login.png" id="username-icon">
+            </span>
+        </div>
+        <div class="input-container">
+            <input class="regis-input" type="password" id="password" placeholder="Password">
+            <span class="toggle-visibility" onclick="toggleVisibility('password')">
+                <img class="regis-eyes" src="img/open-eye-login.png" id="password-icon">
+            </span>
+        </div>
+        <button id="loginBtn" class="login-button">Войти</button>
+    </div>
+    <script src="registration.js"></script>
+</body>
+</html>
