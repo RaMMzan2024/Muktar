@@ -642,6 +642,10 @@ ol.lists-block li.list-name::before {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     animation: slideIn 0.5s ease;
 }
+.modal-content-region{
+    width: 527px;
+    height: 182px;
+}
 
 .modal-input {
     width: 487px;
